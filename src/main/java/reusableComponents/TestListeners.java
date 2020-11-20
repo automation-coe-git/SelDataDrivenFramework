@@ -18,6 +18,7 @@ import org.testng.annotations.Parameters;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.beust.jcommander.Parameter;
 
 import testBase.DriverFactory;
 import testBase.ExtentFactory;
@@ -29,6 +30,7 @@ public class TestListeners implements ITestListener{
 		   ExtentTest test;
 		   
 	public void onTestStart(ITestResult result) {
+		
 		test = report.createTest(result.getMethod().getMethodName());
 		ExtentFactory.getInstance().setExtent(test);
 	}
@@ -75,18 +77,16 @@ public class TestListeners implements ITestListener{
 	}
 	
 	public void onStart(ITestContext context) {
-		
 		try {
 			 report = ExtentReportNG.setupExtentReport();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
 	}
 
 	public void onFinish(ITestContext context) {
 	
 		report.flush();
 	}
-
+	
 }

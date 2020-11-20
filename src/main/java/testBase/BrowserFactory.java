@@ -2,7 +2,6 @@ package testBase;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
@@ -17,12 +16,15 @@ public class BrowserFactory {
 		DesiredCapabilities desiredCapablities=new DesiredCapabilities();
 		if(browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
+			//driver=new ChromeDriver();
 			desiredCapablities.setBrowserName(BrowserType.CHROME);
 			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), desiredCapablities);
 		}else if (browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
+			//driver= new FirefoxDriver();
 			desiredCapablities.setBrowserName(BrowserType.FIREFOX);
 			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), desiredCapablities);
+			
 		} if (browser.equalsIgnoreCase("ie")) {
 			WebDriverManager.iedriver().setup();
 			InternetExplorerOptions iOptions = new InternetExplorerOptions();
