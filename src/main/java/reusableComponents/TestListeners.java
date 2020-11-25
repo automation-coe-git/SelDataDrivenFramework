@@ -28,6 +28,14 @@ public class TestListeners implements ITestListener{
 
 	static ExtentReports report;
 		   ExtentTest test;
+		   public void report() {
+			   try {
+					 report = ExtentReportNG.setupExtentReport();
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+		   }
 		   
 	public void onTestStart(ITestResult result) {
 		
@@ -77,11 +85,8 @@ public class TestListeners implements ITestListener{
 	}
 	
 	public void onStart(ITestContext context) {
-		try {
-			 report = ExtentReportNG.setupExtentReport();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+				
+		
 	}
 
 	public void onFinish(ITestContext context) {

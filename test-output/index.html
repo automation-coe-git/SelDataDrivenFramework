@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Airbnb_Test" class="navigator-link">
-              <span class="suite-name border-failed">Airbnb Test</span>
+              <span class="suite-name border-skipped">Airbnb Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,  2 skipped,  </span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Airbnb_Test" class="hide-methods failed suite-Airbnb_Test"> (hide)</a> <!-- hide-methods failed suite-Airbnb_Test -->
-                      <a href="#" panel-name="suite-Airbnb_Test" class="show-methods failed suite-Airbnb_Test"> (show)</a> <!-- show-methods failed suite-Airbnb_Test -->
-                    </span>
-                    <div class="method-list-content failed suite-Airbnb_Test">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Airbnb_Test" title="Tests.AirbnbTests" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Airbnb_Test" title="Tests.AirbnbTests" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Airbnb_Test -->
+                    <span class="method-stats">4 methods,  4 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -121,12 +102,22 @@
                     <div class="method-list-content skipped suite-Airbnb_Test">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Airbnb_Test" title="Tests.AirbnbTests" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Airbnb_Test" title="Tests.AirbnbTests1" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Airbnb_Test" title="Tests.AirbnbTests" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Airbnb_Test" title="Tests.AirbnbTests2" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Airbnb_Test" title="Tests.AirbnbTests1" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Airbnb_Test" title="Tests.AirbnbTests2" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Airbnb_Test -->
@@ -141,38 +132,65 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Airbnb_Test" class="panel Airbnb_Test">
-          <div class="suite-Airbnb_Test-class-failed">
+          <div class="suite-Airbnb_Test-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Tests.AirbnbTests</span>
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.AirbnbTests1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test2">
-                  </a> <!-- test2 -->
-                  <span class="method-name">test2</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=86.0.4240.198)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;DESKTOP-POD63J8&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.z39jy8}, goog:chromeOptions: {debuggerAddress: localhost:39509}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 8a7ad55ac478414a7909d5829e7...}
-Session ID: 8a7ad55ac478414a7909d5829e7a62fb
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:146)
-	at pageObjects.HomePage.selecttoDate(HomePage.java:105)
-	at pageObjects.HomePage.selecttoDate(HomePage.java:114)
-	at Tests.AirbnbTests.test2(AirbnbTests.java:60)
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:19)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:873)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:101)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
+	... 24 more
+Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:858)
+	... 28 more
 ... Removed 16 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -182,21 +200,64 @@ Session ID: 8a7ad55ac478414a7909d5829e7a62fb
                   <a name="test2">
                   </a> <!-- test2 -->
                   <span class="method-name">test2</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Stay in Bengaluru] but found [Stays in Bengaluru]
-	at Tests.AirbnbTests.test2(AirbnbTests.java:65)
+                  <div class="stack-trace">io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:19)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 17 stack frames
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:873)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:101)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
+	... 24 more
+Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:858)
+	... 28 more
+... Removed 16 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Airbnb_Test-class-failed -->
+          </div> <!-- suite-Airbnb_Test-class-skipped -->
           <div class="suite-Airbnb_Test-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">Tests.AirbnbTests</span>
+              <span class="class-name">Tests.AirbnbTests2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -204,95 +265,107 @@ Session ID: 8a7ad55ac478414a7909d5829e7a62fb
                   <a name="test1">
                   </a> <!-- test1 -->
                   <span class="method-name">test1</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;DESKTOP-POD63J8&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:149)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:24)
-	at testBase.TestBase.LaunchApplication(TestBase.java:19)
+                  <div class="stack-trace">io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:55)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+Caused by: java.net.UnknownHostException: api.github.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
 	... 24 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
-	... 34 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	... 1 more
 ... Removed 16 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;DESKTOP-POD63J8&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:149)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:28)
-	at testBase.TestBase.LaunchApplication(TestBase.java:19)
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                  <div class="stack-trace">io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:55)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+Caused by: java.net.UnknownHostException: api.github.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
 	... 24 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
-	... 34 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	... 1 more
 ... Removed 16 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -308,20 +381,20 @@ Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/1
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Airbnb Test&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; parallel=&quot;methods&quot; name=&quot;Airbnb Test&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;reusableComponents.TestListeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Test1&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;methods&quot; name=&quot;Test1&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.AirbnbTests&quot;/&gt;
+      &lt;class name=&quot;Tests.AirbnbTests1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Test2&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;methods&quot; name=&quot;Test2&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.AirbnbTests&quot;/&gt;
+      &lt;class name=&quot;Tests.AirbnbTests2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test2 --&gt;
 &lt;/suite&gt; &lt;!-- Airbnb Test --&gt;
@@ -366,26 +439,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test2')
-data.setCell(0, 2, 'Tests.AirbnbTests')
-data.setCell(0, 3, 84747);
+data.setCell(0, 1, 'test1')
+data.setCell(0, 2, 'Tests.AirbnbTests1')
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test2')
-data.setCell(1, 2, 'Tests.AirbnbTests')
-data.setCell(1, 3, 70453);
+data.setCell(1, 2, 'Tests.AirbnbTests1')
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test1')
-data.setCell(2, 2, 'Tests.AirbnbTests')
-data.setCell(2, 3, 1);
+data.setCell(2, 2, 'Tests.AirbnbTests2')
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test1')
-data.setCell(3, 2, 'Tests.AirbnbTests')
+data.setCell(3, 1, 'test2')
+data.setCell(3, 2, 'Tests.AirbnbTests2')
 data.setCell(3, 3, 0);
 window.suiteTableData['Airbnb_Test']= { tableData: data, tableDiv: 'times-div-Airbnb_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Airbnb_Test">
               </div> <!-- times-div-Airbnb_Test -->
             </div> <!-- times-div -->
@@ -400,9 +473,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Airbnb_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Tests.AirbnbTests1</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test3</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Tests.AirbnbTests2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test3</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Airbnb_Test" class="panel">
@@ -411,63 +498,83 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.AirbnbTests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">LaunchApplication(chrome)</span>
+              <div class="chronological-class-name">Tests.AirbnbTests2</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">DockerUp</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.AirbnbTests1</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">intializeReport(chrome)</span>
+                <span class="method-start">24412 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LaunchApplication(chrome)</span>
+                <span class="method-start">24872 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">LaunchApplication(chrome)</span>
-                <span class="method-start">5 ms</span>
+                <span class="method-start">24872 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">test2</span>
-                <span class="method-start">43195 ms</span>
-              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">66482 ms</span>
+                <span class="method-start">25962 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">66594 ms</span>
+                <span class="method-start">26062 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">118394 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">LaunchApplication(firefox)</span>
-                <span class="method-start">121343 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">LaunchApplication(firefox)</span>
-                <span class="method-start">121343 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">46321 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">46341 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.AirbnbTests2</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">intializeReport(firefox)</span>
+                <span class="method-start">47128 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test2</span>
-                <span class="method-start">167726 ms</span>
-              </div> <!-- test-method -->
+                <span class="method-name">LaunchApplication(firefox)</span>
+                <span class="method-start">47132 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchApplication(firefox)</span>
+                <span class="method-start">47132 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">181961 ms</span>
+                <span class="method-start">47178 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">181997 ms</span>
+                <span class="method-start">47194 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">108198 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">260384 ms</span>
+                <span class="method-start">108203 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">DockerDown</span>
+                <span class="method-start">108481 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

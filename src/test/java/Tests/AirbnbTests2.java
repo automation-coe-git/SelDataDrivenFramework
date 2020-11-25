@@ -2,11 +2,8 @@ package Tests;
 
 import java.io.IOException;
 import java.text.ParseException;
-
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import pageObjects.HomePage;
 import pageObjects.SearchResultsPage;
 import reusableComponents.ExcelUtils;
@@ -15,10 +12,7 @@ import reusableComponents.ReadConfig;
 import testBase.MyLogger;
 import testBase.TestBase;
 
-
-
-
-public class AirbnbTests extends TestBase {
+public class AirbnbTests2 extends TestBase {
 	
 	HomePage homePage = new HomePage();
 	SearchResultsPage searchResultPage=new SearchResultsPage();
@@ -65,6 +59,22 @@ public class AirbnbTests extends TestBase {
 		Assert.assertEquals(searchResultPage.getMessage(), "Stay in Bengaluru");
 		searchResultPage.clickLink();
 
+	}
+	
+	@Test(enabled = false, dataProvider = "getData", dataProviderClass = JSONutils.class)
+	public void test3(JSONutils data) throws InterruptedException, ParseException {
+		
+		homePage.clickLocation();
+		homePage.setLocation(data.getLocation());
+		homePage.clickCheckin();
+		homePage.selectFromDate(data.getFromdate());
+		homePage.selecttoDate(data.getTodate());
+		homePage.clickGuestelm();
+		homePage.addGuests("adults", Integer.parseInt(data.getAdults()));
+		homePage.addGuests("children", Integer.parseInt(data.getChildren()));
+		homePage.clickSearch();
+		Assert.assertEquals(searchResultPage.getMessage(), "Stays in Bengaluru");
+		//searchResultPage.clickLink();
 	}
 	
 }

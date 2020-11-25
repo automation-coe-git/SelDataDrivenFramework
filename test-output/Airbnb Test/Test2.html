@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test2</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 19 14:13:43 IST 2020</td>
+<td>Started on:</td><td>Wed Nov 25 11:12:56 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>139 seconds (139083 ms)</td>
+<tr><td>Total time:</td><td>61 seconds (61085 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,58 +75,62 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.AirbnbTests.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests<br>Parameters: firefox</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;DESKTOP-POD63J8&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:149)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:28)
-	at testBase.TestBase.LaunchApplication(TestBase.java:19)
+<td title='Tests.AirbnbTests2.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests2<br>Parameters: firefox</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:55)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+Caused by: java.net.UnknownHostException: api.github.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
 	... 24 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
-	... 34 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	... 1 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace850794878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace850794878'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;DESKTOP-POD63J8&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:149)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:28)
-	at testBase.TestBase.LaunchApplication(TestBase.java:19)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1443022142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1443022142'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -146,36 +150,44 @@ Driver info: driver.version: RemoteWebDriver
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:55)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+Caused by: java.net.UnknownHostException: api.github.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
 	... 24 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
-	... 34 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	... 1 more
 </pre></div></td>
-<td>60</td>
-<td>Tests.AirbnbTests@d5b810e</td></tr>
+<td>0</td>
+<td>Tests.AirbnbTests2@5a56cdac</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -185,120 +197,15 @@ Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.AirbnbTests.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests</td>
+<td title='Tests.AirbnbTests2.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests2</td>
 <td></td>
-<td>-1605775484</td>
-<td>Tests.AirbnbTests@d5b810e</td></tr>
+<td>-1606282976</td>
+<td>Tests.AirbnbTests2@5a56cdac</td></tr>
 <tr>
-<td title='Tests.AirbnbTests.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests</td>
+<td title='Tests.AirbnbTests2.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests2</td>
 <td></td>
-<td>-1605775562</td>
-<td>Tests.AirbnbTests@d5b810e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Tests.AirbnbTests.test2()'><b>test2</b><br>Test class: Tests.AirbnbTests</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=86.0.4240.198)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;DESKTOP-POD63J8&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.z39jy8}, goog:chromeOptions: {debuggerAddress: localhost:39509}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 8a7ad55ac478414a7909d5829e7...}
-Session ID: 8a7ad55ac478414a7909d5829e7a62fb
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:146)
-	at pageObjects.HomePage.selecttoDate(HomePage.java:105)
-	at pageObjects.HomePage.selecttoDate(HomePage.java:114)
-	at Tests.AirbnbTests.test2(AirbnbTests.java:60)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1452510576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1452510576'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=86.0.4240.198)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;DESKTOP-POD63J8&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.z39jy8}, goog:chromeOptions: {debuggerAddress: localhost:39509}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 8a7ad55ac478414a7909d5829e7...}
-Session ID: 8a7ad55ac478414a7909d5829e7a62fb
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:146)
-	at pageObjects.HomePage.selecttoDate(HomePage.java:105)
-	at pageObjects.HomePage.selecttoDate(HomePage.java:114)
-	at Tests.AirbnbTests.test2(AirbnbTests.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></div></td>
-<td>70</td>
-<td>Tests.AirbnbTests@20ccf40b</td></tr>
-<tr>
-<td title='Tests.AirbnbTests.test2()'><b>test2</b><br>Test class: Tests.AirbnbTests</td>
-<td><div><pre>java.lang.AssertionError: expected [Stay in Bengaluru] but found [Stays in Bengaluru]
-	at Tests.AirbnbTests.test2(AirbnbTests.java:65)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1731885948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1731885948'><pre>java.lang.AssertionError: expected [Stay in Bengaluru] but found [Stays in Bengaluru]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at Tests.AirbnbTests.test2(AirbnbTests.java:65)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></div></td>
-<td>84</td>
-<td>Tests.AirbnbTests@d5b810e</td></tr>
+<td>-1606283037</td>
+<td>Tests.AirbnbTests2@5a56cdac</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -308,58 +215,64 @@ Session ID: 8a7ad55ac478414a7909d5829e7a62fb
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.AirbnbTests.test1()'><b>test1</b><br>Test class: Tests.AirbnbTests</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;DESKTOP-POD63J8&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:149)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:24)
-	at testBase.TestBase.LaunchApplication(TestBase.java:19)
+<td title='Tests.AirbnbTests1.test1()'><b>test1</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:19)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:55)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:873)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:101)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
 	... 24 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
-	... 34 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	... 1 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace46343381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace46343381'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;DESKTOP-POD63J8&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:149)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:24)
-	at testBase.TestBase.LaunchApplication(TestBase.java:19)
+Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:858)
+	... 28 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace901585182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace901585182'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:19)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -379,89 +292,103 @@ Driver info: driver.version: RemoteWebDriver
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:55)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:873)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:101)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
 	... 24 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
-	... 34 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	... 1 more
+Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:858)
+	... 28 more
 </pre></div></td>
 <td>0</td>
-<td>Tests.AirbnbTests@20ccf40b</td></tr>
+<td>Tests.AirbnbTests1@3b6ddd1d</td></tr>
 <tr>
-<td title='Tests.AirbnbTests.test1()'><b>test1</b><br>Test class: Tests.AirbnbTests</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;DESKTOP-POD63J8&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:149)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:28)
-	at testBase.TestBase.LaunchApplication(TestBase.java:19)
+<td title='Tests.AirbnbTests2.test1()'><b>test1</b><br>Test class: Tests.AirbnbTests2</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:55)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+Caused by: java.net.UnknownHostException: api.github.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
 	... 24 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
-	... 34 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	... 1 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1991123788", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1991123788'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;DESKTOP-POD63J8&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:149)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:28)
-	at testBase.TestBase.LaunchApplication(TestBase.java:19)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1212519314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1212519314'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -481,36 +408,276 @@ Driver info: driver.version: RemoteWebDriver
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:55)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+Caused by: java.net.UnknownHostException: api.github.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
 	... 24 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
-	... 34 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	... 1 more
 </pre></div></td>
 <td>0</td>
-<td>Tests.AirbnbTests@d5b810e</td></tr>
+<td>Tests.AirbnbTests2@5a56cdac</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test2()'><b>test2</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:19)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:873)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:101)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
+	... 24 more
+Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:858)
+	... 28 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1915761018", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1915761018'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:19)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:873)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:101)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
+	... 24 more
+Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:858)
+	... 28 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@3b6ddd1d</td></tr>
+<tr>
+<td title='Tests.AirbnbTests2.test2()'><b>test2</b><br>Test class: Tests.AirbnbTests2</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: api.github.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
+	... 24 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1064048113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1064048113'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
+	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: api.github.com
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
+	... 24 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests2@5a56cdac</td></tr>
 </table><p>
 </body>
 </html>

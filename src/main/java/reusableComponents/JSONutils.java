@@ -51,7 +51,7 @@ public class JSONutils {
 	@SuppressWarnings("deprecation")
 	@DataProvider
 	public Object[][] getData() throws FileNotFoundException {
-		FileReader jsonfile = new FileReader("C:\\Users\\Mukesh\\Desktop\\testData.json");
+		FileReader jsonfile = new FileReader("./resource/testData.json");
 		JsonElement jsonData = new JsonParser().parse(jsonfile);
 		JsonElement dataSet = jsonData.getAsJsonObject().get("dataSet");
 		List<JSONutils> testData = new Gson().fromJson(dataSet, new TypeToken<List<JSONutils>>() {
