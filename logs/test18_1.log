@@ -1,0 +1,15 @@
+[INFO ] 2020-12-08 16:33:15.804 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test18**************
+
+[INFO ] 2020-12-08 16:33:16.469 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-08 17:11:38.525 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test18**************
+
+[INFO ] 2020-12-08 17:11:38.818 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-08 17:24:12.007 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test18**************
+
+[INFO ] 2020-12-08 17:24:12.023 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox

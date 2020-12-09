@@ -1,0 +1,20 @@
+{
+  "dataSet": [
+    {
+      "testCase": "TC-1",
+      "location": "Bangalore",
+      "fromdate": "2020/12/05",
+      "todate": "2020/12/07",
+      "adults":"2",
+      "children":"2"
+    },
+    {
+      "testCase": "TC-2",
+      "location": "GOA",
+      "fromdate": "2020/12/17",
+      "todate": "2020/12/20",
+      "adults":"2",
+      "children":"1"
+    }
+  ]
+}

@@ -24,9 +24,10 @@ public class TestBase {
 	public void LaunchApplication(String browser) throws Exception {
 		reusableComponents.ReadConfig readconfig = new reusableComponents.ReadConfig("./Configuration/config.properties");
 		String baseURL = readconfig.getValue("baseURL");
+		
 		DriverFactory.getInstance().setDriver(browserFactory.createBrowserInstance(browser));
 		DriverFactory.getInstance().getDriver().manage().window().maximize();
-		DriverFactory.getInstance().getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		DriverFactory.getInstance().getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		DriverFactory.getInstance().getDriver().navigate().to(baseURL);
 	}
 
@@ -44,14 +45,14 @@ public class TestBase {
 		report1.report();
 	}
 	
-	@BeforeSuite
-	public void DockerUp() throws InterruptedException {
-		new reusableComponents.CommandPromptUtils("docker-compose up -d");
-		Thread.sleep(20000);
-	}
+	/*
+	 * @BeforeSuite public void DockerUp() throws InterruptedException { new
+	 * reusableComponents.CommandPromptUtils("docker-compose up -d");
+	 * Thread.sleep(15000); }
+	 */
 	
-	@AfterSuite
-	public void DockerDown() {
-		new reusableComponents.CommandPromptUtils("docker-compose down");
-	}
+	/*
+	 * @AfterSuite public void DockerDown() { new
+	 * reusableComponents.CommandPromptUtils("docker-compose down"); }
+	 */
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test2</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/21</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 25 11:12:56 IST 2020</td>
+<td>Started on:</td><td>Tue Dec 08 18:09:11 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>61 seconds (61085 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (429 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,62 +75,24 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.AirbnbTests2.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests2<br>Parameters: firefox</td>
-<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
-	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1<br>Parameters: firefox</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: api.github.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
-	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
-	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
-	... 24 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1443022142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1443022142'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
-	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1834034301", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1834034301'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,44 +112,178 @@ Caused by: java.net.UnknownHostException: api.github.com
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: api.github.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
-	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
-	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
-	... 24 more
+Caused by: java.lang.NullPointerException
 </pre></div></td>
 <td>0</td>
-<td>Tests.AirbnbTests2@5a56cdac</td></tr>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1<br>Parameters: firefox</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace941916001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace941916001'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1<br>Parameters: firefox</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1617788901", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1617788901'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1<br>Parameters: firefox</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2051071296", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2051071296'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1<br>Parameters: firefox</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace539615118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace539615118'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -197,15 +293,190 @@ Caused by: java.net.UnknownHostException: api.github.com
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.AirbnbTests2.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests2</td>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
 <td></td>
-<td>-1606282976</td>
-<td>Tests.AirbnbTests2@5a56cdac</td></tr>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
 <tr>
-<td title='Tests.AirbnbTests2.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests2</td>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
 <td></td>
-<td>-1606283037</td>
-<td>Tests.AirbnbTests2@5a56cdac</td></tr>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.LaunchApplication()'><b>LaunchApplication</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.tearDown()'><b>tearDown</b><br>Test class: Tests.AirbnbTests1</td>
+<td></td>
+<td>-1607431151</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -216,63 +487,25 @@ Caused by: java.net.UnknownHostException: api.github.com
 </tr>
 <tr>
 <td title='Tests.AirbnbTests1.test1()'><b>test1</b><br>Test class: Tests.AirbnbTests1</td>
-<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:19)
-	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:873)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:101)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
-	... 24 more
-Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:858)
-	... 28 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace901585182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace901585182'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:19)
-	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2078686940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2078686940'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -292,103 +525,31 @@ Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:873)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:101)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
-	... 24 more
-Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:858)
-	... 28 more
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
 </pre></div></td>
 <td>0</td>
-<td>Tests.AirbnbTests1@3b6ddd1d</td></tr>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
 <tr>
-<td title='Tests.AirbnbTests2.test1()'><b>test1</b><br>Test class: Tests.AirbnbTests2</td>
-<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
-	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+<td title='Tests.AirbnbTests1.test1()'><b>test1</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: api.github.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
-	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
-	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
-	... 24 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1212519314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1212519314'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
-	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1883990001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1883990001'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -408,103 +569,823 @@ Caused by: java.net.UnknownHostException: api.github.com
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: api.github.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
-	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
-	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
-	... 24 more
+Caused by: java.lang.NullPointerException
 </pre></div></td>
 <td>0</td>
-<td>Tests.AirbnbTests2@5a56cdac</td></tr>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test10()'><b>test10</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1618808648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1618808648'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test10()'><b>test10</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1799253034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1799253034'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test11()'><b>test11</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1014322605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1014322605'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test11()'><b>test11</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1224962800", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1224962800'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test13()'><b>test13</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace616616533", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace616616533'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test13()'><b>test13</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1564480445", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1564480445'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test14()'><b>test14</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace340991874", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace340991874'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test14()'><b>test14</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace190931696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace190931696'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test15()'><b>test15</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1108565175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1108565175'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test15()'><b>test15</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1666229957", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1666229957'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test16()'><b>test16</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace952824581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace952824581'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test16()'><b>test16</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1582772606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1582772606'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test17()'><b>test17</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1797424047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1797424047'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test17()'><b>test17</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace684089773", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace684089773'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test18()'><b>test18</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7959926", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7959926'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test18()'><b>test18</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1073173264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1073173264'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test19()'><b>test19</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace967614589", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace967614589'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test19()'><b>test19</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26032191", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26032191'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
 <tr>
 <td title='Tests.AirbnbTests1.test2()'><b>test2</b><br>Test class: Tests.AirbnbTests1</td>
-<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:19)
-	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:873)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:101)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
-	... 24 more
-Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:858)
-	... 28 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1915761018", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1915761018'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:19)
-	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1997808012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1997808012'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -524,103 +1405,31 @@ Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:873)
-	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:101)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
-	... 24 more
-Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:858)
-	... 28 more
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
 </pre></div></td>
 <td>0</td>
-<td>Tests.AirbnbTests1@3b6ddd1d</td></tr>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
 <tr>
-<td title='Tests.AirbnbTests2.test2()'><b>test2</b><br>Test class: Tests.AirbnbTests2</td>
-<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
-	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+<td title='Tests.AirbnbTests1.test2()'><b>test2</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: api.github.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
-	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
-	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
-	... 24 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1064048113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1064048113'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:749)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:746)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:555)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:285)
-	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:26)
-	at testBase.TestBase.LaunchApplication(TestBase.java:27)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace418884722", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace418884722'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -640,44 +1449,890 @@ Caused by: java.net.UnknownHostException: api.github.com
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.UnknownHostException: api.github.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:138)
-	at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:905)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:919)
-	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:755)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:627)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:549)
-	... 24 more
+Caused by: java.lang.NullPointerException
 </pre></div></td>
 <td>0</td>
-<td>Tests.AirbnbTests2@5a56cdac</td></tr>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test20()'><b>test20</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1720157061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1720157061'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test20()'><b>test20</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace422242151", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace422242151'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test21()'><b>test21</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace841430332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace841430332'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test21()'><b>test21</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace65071774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace65071774'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test22()'><b>test22</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace278249561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace278249561'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test22()'><b>test22</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1035715826", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1035715826'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test23()'><b>test23</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1517184068", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1517184068'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test23()'><b>test23</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace514703428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace514703428'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test24()'><b>test24</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20396651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20396651'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test24()'><b>test24</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1231176038", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1231176038'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test25()'><b>test25</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1671274672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1671274672'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test25()'><b>test25</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace547836110", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace547836110'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test4()'><b>test4</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace144957686", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace144957686'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test4()'><b>test4</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace711644948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace711644948'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test5()'><b>test5</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1406524889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1406524889'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test5()'><b>test5</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace792818835", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace792818835'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test7()'><b>test7</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1824808798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1824808798'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test7()'><b>test7</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1668761614", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1668761614'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test8()'><b>test8</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace352606425", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace352606425'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:39)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:585)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@5d7148e2</td></tr>
+<tr>
+<td title='Tests.AirbnbTests1.test8()'><b>test8</b><br>Test class: Tests.AirbnbTests1</td>
+<td><div><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace912421160", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace912421160'><pre>java.net.MalformedURLException
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:679)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:541)
+	at java.base/java.net.URL.&lt;init&gt;(URL.java:488)
+	at testBase.BrowserFactory.createBrowserInstance(BrowserFactory.java:43)
+	at testBase.TestBase.LaunchApplication(TestBase.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>Tests.AirbnbTests1@1de5f259</td></tr>
 </table><p>
 </body>
 </html>

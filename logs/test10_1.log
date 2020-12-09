@@ -1,0 +1,60 @@
+[INFO ] 2020-12-07 16:17:42.554 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test10**************
+
+[INFO ] 2020-12-07 16:18:05.057 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-07 16:38:21.291 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test10**************
+
+[INFO ] 2020-12-07 16:38:21.435 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-08 11:54:08.716 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test10**************
+
+[INFO ] 2020-12-08 11:54:11.211 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-08 14:22:35.204 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test10**************
+
+[INFO ] 2020-12-08 14:22:51.815 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-08 15:06:45.374 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test10**************
+
+[INFO ] 2020-12-08 15:06:45.631 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-08 15:17:31.754 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test10**************
+
+[INFO ] 2020-12-08 15:17:32.460 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-08 15:28:25.077 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test10**************
+
+[INFO ] 2020-12-08 15:28:25.492 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-08 15:34:53.569 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test10**************
+
+[INFO ] 2020-12-08 15:34:53.602 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-08 15:47:57.606 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test10**************
+
+[INFO ] 2020-12-08 15:47:57.654 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-08 16:02:54.480 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test10**************
+
+[INFO ] 2020-12-08 16:02:54.545 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-08 17:08:37.512 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test10**************
+
+[INFO ] 2020-12-08 17:08:37.741 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-08 17:20:44.627 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test10**************
+
+[INFO ] 2020-12-08 17:20:44.647 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
