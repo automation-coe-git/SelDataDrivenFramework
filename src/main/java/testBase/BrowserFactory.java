@@ -17,10 +17,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BrowserFactory {
 	public WebDriver createBrowserInstance(String browser) throws MalformedURLException {
 		RemoteWebDriver driver = null;
-		reusableComponents.ReadConfig readconfig = new reusableComponents.ReadConfig("./Configuration/config.properties");
-		//String remoteURL = readconfig.getValue("remoteURL");
 	
-		String remoteURL= "http://"+ "zalenium"+":"+"Zalenium2020"+"@"+"35.224.146.128"+"/wd/hub";
+		String remoteURL= "http://"+ "zaleniumdemo"+":"+"Zalenium2020"+"@"+"34.122.190.110"+"/wd/hub";
 		DesiredCapabilities desiredCapablities=new DesiredCapabilities();
 		desiredCapablities.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
 		desiredCapablities.setCapability("idleTimeout", 180);

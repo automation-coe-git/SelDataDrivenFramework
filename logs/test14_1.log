@@ -13,3 +13,13 @@
 ************** Execution Started : test14**************
 
 [INFO ] 2020-12-08 17:20:48.093 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-09 17:28:16.585 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test14**************
+
+[INFO ] 2020-12-09 17:28:16.751 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox
+[INFO ] 2020-12-09 17:30:46.734 - testBase.MyLogger:startTestCase 16==>  
+
+************** Execution Started : test14**************
+
+[INFO ] 2020-12-09 17:30:46.837 - pageObjects.HomePage:clickLocation 42==>  Clicking on Location Textbox

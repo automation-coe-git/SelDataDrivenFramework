@@ -17,10 +17,8 @@
           <include name="test4"/>
           <include name="test19"/>
           <include name="test8"/>
-          <include name="test1"/>
           <include name="test17"/>
           <include name="test18"/>
-          <include name="test13"/>
           <include name="test24"/>
           <include name="test16"/>
           <include name="test11"/>
@@ -31,7 +29,6 @@
           <include name="test25"/>
           <include name="test20"/>
           <include name="test23"/>
-          <include name="test10"/>
           <include name="test21"/>
         </methods>
       </class> <!-- Tests.AirbnbTests1 -->
@@ -50,10 +47,8 @@
           <include name="test4"/>
           <include name="test19"/>
           <include name="test8"/>
-          <include name="test1"/>
           <include name="test17"/>
           <include name="test18"/>
-          <include name="test13"/>
           <include name="test24"/>
           <include name="test16"/>
           <include name="test11"/>
@@ -64,7 +59,6 @@
           <include name="test25"/>
           <include name="test20"/>
           <include name="test23"/>
-          <include name="test10"/>
           <include name="test21"/>
         </methods>
       </class> <!-- Tests.AirbnbTests1 -->
